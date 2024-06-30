@@ -1,0 +1,31 @@
+.navBar{
+
+    background-color: red;
+    border-bottom: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lista{
+    list-style: none;
+    display: flex;
+    margin: 7px 0 0 7px;
+
+}
+.item{
+    float: right;
+}
+.enlaces{
+    margin: 7px;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color:beige;
+    background-color: aquamarine;
+    border-radius: 6px;
+}
+.cartWidget{
+    width: 40%;
+}
