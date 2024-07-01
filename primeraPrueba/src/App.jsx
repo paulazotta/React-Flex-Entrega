@@ -15,8 +15,9 @@ function App() {
       
       <div>
         <NavBar></NavBar>
+        <h1>Ecommerce</h1>
         <ItemListConteiner greeting={'Bienvenidos'} />
-        <h1>Hola mundo</h1>
+        
       </div>
     
   )
