@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import NavBar from './componentes/NavBar/NavBar'
 import ItemListConteiner from './componentes/ItemListConteiner/ItemListConteiner'
-
+import BotonPrueba from './componentes/BotonPrueba/BotonPrueba'
 
 
 
@@ -16,8 +16,8 @@ function App() {
       <div>
         <NavBar></NavBar>
         {/* <h1>Ecommerce</h1> */}
-        <ItemListConteiner usuario="profes" />
-        
+        <ItemListConteiner usuario="profe" />
+        <BotonPrueba textoBoton={false}/>
       </div>
     
   )
