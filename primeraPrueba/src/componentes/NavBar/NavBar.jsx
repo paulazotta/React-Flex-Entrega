@@ -9,7 +9,7 @@ function NavBar() {
         <nav className='navBar'>
         <ul className='lista'>
                 <li className='item'><a href="" className='enlaces'>Inicio</a></li>
-                <li className='item'><a href=""className='enlaces'>Contacto</a></li>
+                <li className='item'><a href=""className='enlaces'>Contactos</a></li>
                 <li className='item'><a href=""className='enlaces'>Productos</a></li>
         </ul>
                 <CartWidget/>

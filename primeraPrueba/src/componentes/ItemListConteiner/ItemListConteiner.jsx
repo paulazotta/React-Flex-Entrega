@@ -1,10 +1,21 @@
 import React from "react"
+import ItemList from "../ItemList/ItemList"
 
-const ItemListConteiner = (props) =>{
+const ItemListConteiner = ({productos}) =>{
   return(
-    <div>
-      <h2> Hola {props.usuario} </h2>
-    </div>
-  )
+    <>
+      {
+        productos.length === 0?
+        <p>1</p>
+        :
+        <ItemList productos={productos} />
+      }
+    </>
+  )  
 }
+    
+
+    
 export default ItemListConteiner
+
+   
