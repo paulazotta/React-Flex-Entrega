@@ -6,7 +6,7 @@ const ItemListConteiner = ({productos}) =>{
     <>
       {
         productos.length === 0?
-        <p>1</p>
+        <p>Cargando...</p>
         :
         <ItemList productos={productos} />
       }

@@ -3,13 +3,15 @@
 
 
 import React from 'react'
+import BotonPrueba from '../BotonPrueba/BotonPrueba'
 
 function Item({nombre, valor, index}) {
+  
   return (
     <div key={index} >
           <h3>{nombre}</h3>
           <p>${valor}</p>
-          <button>Agregar</button>
+          <BotonPrueba/>
 
         </div>
   )

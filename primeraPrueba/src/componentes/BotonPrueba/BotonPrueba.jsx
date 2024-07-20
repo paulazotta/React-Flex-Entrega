@@ -3,14 +3,14 @@ import { useState } from 'react'
 
 function BotonPrueba() {
     // useState
-    const [comprar, cancelar] = useState(true)
+    const [agregar, quitar] = useState(true)
 
     // Ternario
-    const textoBoton = comprar ?  'Confirmar compra' : 'Cancelar compra'
+    const textoBoton = agregar ?  'Agregar al carrito' : 'Quitar del carrito'
     
     // Agrego la actualización del estado
     const handleClick = () => {
-        cancelar (!comprar)
+        quitar (!agregar)
     }
   return (
     <div>

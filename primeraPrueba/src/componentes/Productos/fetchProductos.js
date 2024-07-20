@@ -1,17 +1,17 @@
 const productos = [
     {
         id: 1,
-        producto: "agua",
+        nombre: "agua",
         valor: 10
     },
     {
         id: 2,
-        producto: "jugo",
+        nombre: "jugo",
         valor: 50
     },
     {
         id: 3,
-        producto: "gaseosa",
+        nombre: "gaseosa",
         valor: 30
     }
 ]
