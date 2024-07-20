@@ -6,7 +6,15 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import fetchProductos from './componentes/Productos/fetchProductos'
 
 
-
+  // Dolar blue a través de una API. Traigo la info y la pongo en la variable dolarBlue. 
+//   fetch("https://dolarapi.com/v1/dolares/blue")
+//   .then(response => response.json())
+//   .then(data => {
+//   let dolarBlue = {
+//     venta: data.venta
+//   }
+//   console.log(dolarBlue)
+// });
 
 
 
@@ -22,6 +30,7 @@ function App() {
     // })
     )
     }, [])
+
 
   
   return (

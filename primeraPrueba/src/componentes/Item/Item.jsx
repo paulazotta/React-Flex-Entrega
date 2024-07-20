@@ -3,7 +3,9 @@
 
 
 import React from 'react'
-import BotonAgregarCarrito from '../BotonPrueba/BotonAgregarCarrito'
+import BotonAgregarCarrito from '../BotonAgregarCarrito/BotonAgregarCarrito'
+
+
 
 function Item({nombre, valor, index}) {
   
