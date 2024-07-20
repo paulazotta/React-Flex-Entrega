@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import NavBar from './componentes/NavBar/NavBar'
 import ItemListConteiner from './componentes/ItemListConteiner/ItemListConteiner'
-import BotonPrueba from './componentes/BotonPrueba/BotonPrueba'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import fetchProductos from './componentes/Productos/fetchProductos'
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 
-function BotonPrueba() {
+function BotonAgregarCarrito() {
     // useState
     const [agregar, quitar] = useState(true)
 
@@ -21,4 +21,4 @@ function BotonPrueba() {
   )
 }
 
-export default BotonPrueba
+export default BotonAgregarCarrito

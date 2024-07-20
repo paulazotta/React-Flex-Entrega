@@ -3,7 +3,7 @@
 
 
 import React from 'react'
-import BotonPrueba from '../BotonPrueba/BotonPrueba'
+import BotonAgregarCarrito from '../BotonPrueba/BotonAgregarCarrito'
 
 function Item({nombre, valor, index}) {
   
@@ -11,7 +11,7 @@ function Item({nombre, valor, index}) {
     <div key={index} >
           <h3>{nombre}</h3>
           <p>${valor}</p>
-          <BotonPrueba/>
+          <BotonAgregarCarrito/>
 
         </div>
   )
