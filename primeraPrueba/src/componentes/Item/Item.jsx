@@ -4,15 +4,15 @@
 
 import React from 'react'
 import BotonAgregarCarrito from '../BotonAgregarCarrito/BotonAgregarCarrito'
-
+import './Item.css'
 
 
 function Item({nombre, valor, index}) {
   
   return (
-    <div key={index} >
-          <h3>{nombre}</h3>
-          <p>${valor}</p>
+    <div key={index} className='card'>
+          <h3 className='nombre'>{nombre}</h3>
+          <p className='valor'>${valor}</p>
           <BotonAgregarCarrito/>
 
         </div>

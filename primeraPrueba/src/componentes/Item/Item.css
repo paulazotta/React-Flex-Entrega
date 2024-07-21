@@ -1,0 +1,18 @@
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    
+    border: 1px solid black;
+    margin: 3rem;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+.nombre{
+    color:blueviolet;
+    display: flex;
+}
+.valor{
+    color: blue;
+}
