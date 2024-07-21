@@ -1,0 +1,16 @@
+.nombreProducto{
+    color:aquamarine,
+}
+.caracteristicas{
+    color: brown;
+}
+.card2{
+    display: flex;
+    flex-wrap: wrap;
+    
+    border: 1px solid black;
+    margin: 3rem;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+}

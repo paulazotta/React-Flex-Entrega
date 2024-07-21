@@ -7,6 +7,7 @@ import fetchProductos from './componentes/Productos/fetchProductos'
 import Filter from './componentes/Filter/Filter'
 import BotonAgregarCarrito from './componentes/BotonAgregarCarrito/BotonAgregarCarrito'
 import ItemDetail from './componentes/ItemDetail/ItemDetail'
+import DetalleProductos from './componentes/DetalleProductos/DetalleProductos'
 
 
   // Dolar blue a través de una API. Traigo la info y la pongo en la variable dolarBlue. 

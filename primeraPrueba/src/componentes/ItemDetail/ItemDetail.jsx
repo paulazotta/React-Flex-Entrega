@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Item from '../Item/Item';
+import DetalleProductos from '../DetalleProductos/DetalleProductos';
 
 const ItemDetail = ({productos}) => {
     const {id} = useParams();
@@ -13,10 +14,10 @@ const ItemDetail = ({productos}) => {
     
   return (
     <div>
-        <p>
+        {/* <p>
             Detalle del componente {productoSeleccionado.nombre}
-        </p>
-        <Item key={productoSeleccionado.id} id={productoSeleccionado.id} nombre={productoSeleccionado.nombre} valor={productoSeleccionado.valor}/>
+        </p> */}
+        <DetalleProductos  key={productoSeleccionado.id} id={productoSeleccionado.id} nombre={productoSeleccionado.nombre} caracteristicas={productoSeleccionado.caracteristicas}/>
     </div>
   )
 }

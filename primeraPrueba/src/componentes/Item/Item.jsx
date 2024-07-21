@@ -18,9 +18,7 @@ function Item({nombre, valor, id}) {
           <Link to={`/detalle/${id}`}>
             <button>Ver detalle</button>
           </Link>
-          
-
-        </div>
+    </div>
   )
 }
 
