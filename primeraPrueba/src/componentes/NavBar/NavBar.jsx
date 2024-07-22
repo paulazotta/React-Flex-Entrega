@@ -2,29 +2,37 @@ import React from 'react';
 import CartWidget from '../CartWidget/CartWidget';
 import './NavBar.css';
 import { Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Inicio from '../Inicio/Inicio';
 
 function NavBar() {
   return (
-    <div>
-        <nav className='navBar'>
-        <ul className='lista'>
-                <li className='item'>
-                  {/* <Link to="/inicio"className='enlaces'>Inicio</Link> */}
-                    <a href="" className='enlaces'>Inicio</a>
-                </li>
-                <li className='item'>
-                  <Link to="/contacto" className='enlaces'>Contacto</Link> 
-                    {/* <a href=""className='enlaces'>Contacto</a> */}
-                 </li>
-                <li className='item'>
-                  <Link to="/productos"className='enlaces'>Productos</Link>
-                  {/* <a href=""className='enlaces'>Productos</a> */}
-                </li>
-        </ul>
-                <CartWidget/>
-        </nav>
-    </div>
+
+  <div>
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <div className="container-fluid">
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li className="nav-item">
+              <Link to="/productos" className="nav-link">Productos</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/contacto" className="nav-link">Contacto</Link> 
+            </li>
+          </ul>
+        </div>
+        <CartWidget/>
+      </div>
+    </nav>
+</div>
   )
 }
 
 export default NavBar
+

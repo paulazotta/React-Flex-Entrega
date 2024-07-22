@@ -8,6 +8,11 @@ import Filter from './componentes/Filter/Filter'
 import BotonAgregarCarrito from './componentes/BotonAgregarCarrito/BotonAgregarCarrito'
 import ItemDetail from './componentes/ItemDetail/ItemDetail'
 import DetalleProductos from './componentes/DetalleProductos/DetalleProductos'
+import Contacto from './componentes/Contacto/Contacto'
+import Inicio from './componentes/Inicio/Inicio'
+
+
+
 
 
   // Dolar blue a través de una API. Traigo la info y la pongo en la variable dolarBlue. 
@@ -43,14 +48,16 @@ function App() {
       <div>
         
         {/* <ItemListConteiner productos= {productos} /> */}
-        <Filter filterState={filterState} setFilterState={setFilterState}/>
+        
         <BrowserRouter>
           <NavBar></NavBar>
+          
           <Routes>
             <Route path='/prueba' element={<p>Etiqueta de prueba</p>} ></Route>
-            <Route path='/contacto' element={<BotonAgregarCarrito/>} ></Route>
-            <Route path='/productos' element={<ItemListConteiner productos= {productos} />} ></Route>
+            <Route path='/contacto' element={<Contacto/>} ></Route>
+            <Route path='/productos' element={<ItemListConteiner productos= {productos}  Filter filterState={filterState} setFilterState={setFilterState}/> } ></Route>
             <Route path="/detalle/:id" element={<ItemDetail productos= {productos}/>}></Route>
+
             {/* <Route path="*" element={<NotFound />} ></Route> */}
           </Routes>
         </BrowserRouter>

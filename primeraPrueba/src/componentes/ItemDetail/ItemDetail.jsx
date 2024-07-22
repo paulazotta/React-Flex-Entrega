@@ -17,7 +17,7 @@ const ItemDetail = ({productos}) => {
         {/* <p>
             Detalle del componente {productoSeleccionado.nombre}
         </p> */}
-        <DetalleProductos  key={productoSeleccionado.id} id={productoSeleccionado.id} nombre={productoSeleccionado.nombre} caracteristicas={productoSeleccionado.caracteristicas}/>
+        <DetalleProductos  key={productoSeleccionado.id} id={productoSeleccionado.id} img ={productoSeleccionado.img} nombre={productoSeleccionado.nombre} caracteristicas={productoSeleccionado.caracteristicas}/>
     </div>
   )
 }

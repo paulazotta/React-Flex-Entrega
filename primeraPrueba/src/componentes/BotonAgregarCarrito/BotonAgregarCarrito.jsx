@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import '../BotonAgregarCarrito/BotonAgregarCarrito.css'
 
 function BotonAgregarCarrito() {
     // useState
@@ -14,7 +15,7 @@ function BotonAgregarCarrito() {
     }
   return (
     <div>
-      <button onClick={handleClick}>
+      <button onClick={handleClick} className='botonCarrito'>
         {textoBoton}
       </button>
     </div>

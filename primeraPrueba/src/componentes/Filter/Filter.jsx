@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 function Filter({filterState, setFilterState}) {
     
@@ -18,3 +18,4 @@ function Filter({filterState, setFilterState}) {
 }
 
 export default Filter
+

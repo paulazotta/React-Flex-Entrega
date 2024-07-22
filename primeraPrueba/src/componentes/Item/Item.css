@@ -1,13 +1,29 @@
-
+.cardContainer{
+    /* position: absolute;
+    top:50px;
+    right: 0; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    /* flex-direction: row; */
+    /* padding: 30px; */
+    display: flex;
+    flex-wrap: wrap;
+}
 .card{
     display: flex;
     flex-wrap: wrap;
-    
+    flex-direction: row;
+    margin: 5px;
+    /* width: 10rem;
+    background-color: aliceblue;
     border: 1px solid black;
+    border-radius: 0,5rem;
     margin: 3rem;
     padding: 3rem;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: center; */
 }
 .nombre{
     color:blueviolet;
@@ -15,4 +31,15 @@
 }
 .valor{
     color: blue;
+}
+.verDetalle{
+    padding: 0,5rem;
+    border-radius: 1rem;
+    background-color: orange;
+    font-family: sans-serif;
+    color:blanchedalmond;
+    justify-content: center;
+}
+.imgCard{
+    width: 30%;
 }
