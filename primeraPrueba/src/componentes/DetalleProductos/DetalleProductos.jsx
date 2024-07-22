@@ -4,7 +4,7 @@ import './DetalleProductos.css'
 import BotonAgregarCarrito from '../BotonAgregarCarrito/BotonAgregarCarrito'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-function DetalleProductos({id, nombre, caracteristicas}) {
+function DetalleProductos({id, img, nombre, caracteristicas}) {
     
   return (
     <div>
@@ -17,6 +17,10 @@ function DetalleProductos({id, nombre, caracteristicas}) {
             <div className="card-body">
                 <h5 className="card-title">{nombre}</h5>
                 <p className="card-text">{caracteristicas}</p>
+               
+                <img src={img} className="card-img-top imgCard" alt={nombre} />
+                
+                
                 {/* <p className="card-text"><small className="text-body-secondary">Last updated 3 mins ago</small></p> */}
                 <BotonAgregarCarrito/>
       </div>

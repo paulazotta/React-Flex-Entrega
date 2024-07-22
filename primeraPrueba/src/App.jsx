@@ -10,6 +10,7 @@ import ItemDetail from './componentes/ItemDetail/ItemDetail'
 import DetalleProductos from './componentes/DetalleProductos/DetalleProductos'
 import Contacto from './componentes/Contacto/Contacto'
 import Inicio from './componentes/Inicio/Inicio'
+import Error404 from './componentes/Error404/Error404'
 
 
 
@@ -25,7 +26,7 @@ import Inicio from './componentes/Inicio/Inicio'
 //   console.log(dolarBlue)
 // });
 
-
+{/* <Filter filterState={filterState} setFilterState={setFilterState}/> */}
 
 function App() {
  
@@ -41,7 +42,7 @@ function App() {
     }, [])
 
     const [filterState, setFilterState] = useState("taller");
-   
+    <Filter filterState={filterState} setFilterState={setFilterState}/>
   
   return (
       
@@ -53,12 +54,13 @@ function App() {
           <NavBar></NavBar>
           
           <Routes>
+            <Route path="/inicio" element={<Inicio/>}></Route>
             <Route path='/prueba' element={<p>Etiqueta de prueba</p>} ></Route>
             <Route path='/contacto' element={<Contacto/>} ></Route>
-            <Route path='/productos' element={<ItemListConteiner productos= {productos}  Filter filterState={filterState} setFilterState={setFilterState}/> } ></Route>
+            <Route path='/productos' element={<ItemListConteiner productos= {productos} />} ></Route>
             <Route path="/detalle/:id" element={<ItemDetail productos= {productos}/>}></Route>
-
-            {/* <Route path="*" element={<NotFound />} ></Route> */}
+           
+            <Route path="*" element={<Error404 />} ></Route>
           </Routes>
         </BrowserRouter>
       </div>
