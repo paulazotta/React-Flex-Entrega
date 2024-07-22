@@ -11,12 +11,9 @@ import DetalleProductos from './componentes/DetalleProductos/DetalleProductos'
 import Contacto from './componentes/Contacto/Contacto'
 import Inicio from './componentes/Inicio/Inicio'
 import Error404 from './componentes/Error404/Error404'
+import Filtro2 from './componentes/Filter/Filtro2'
 
-
-
-
-
-  // Dolar blue a través de una API. Traigo la info y la pongo en la variable dolarBlue. 
+// Dolar blue a través de una API. Traigo la info y la pongo en la variable dolarBlue. 
 //   fetch("https://dolarapi.com/v1/dolares/blue")
 //   .then(response => response.json())
 //   .then(data => {
@@ -26,8 +23,6 @@ import Error404 from './componentes/Error404/Error404'
 //   console.log(dolarBlue)
 // });
 
-{/* <Filter filterState={filterState} setFilterState={setFilterState}/> */}
-
 function App() {
  
   const [productos, setProductos] = useState ([])
@@ -35,36 +30,27 @@ function App() {
     fetchProductos()
     .then (response => setProductos (response))
     .catch (err=> console.error(err)
-    // .finally(()=>{
-    //   console.log("estos son tus productos")
-    // })
     )
     }, [])
 
-    const [filterState, setFilterState] = useState("taller");
-    <Filter filterState={filterState} setFilterState={setFilterState}/>
-  
   return (
       
-      <div>
-        
-        {/* <ItemListConteiner productos= {productos} /> */}
-        
+      <div>  
         <BrowserRouter>
           <NavBar></NavBar>
-          
+          <Filtro2/>
           <Routes>
+            <Route path="" element={<Inicio/>}></Route>
             <Route path="/inicio" element={<Inicio/>}></Route>
             <Route path='/prueba' element={<p>Etiqueta de prueba</p>} ></Route>
             <Route path='/contacto' element={<Contacto/>} ></Route>
             <Route path='/productos' element={<ItemListConteiner productos= {productos} />} ></Route>
             <Route path="/detalle/:id" element={<ItemDetail productos= {productos}/>}></Route>
-           
             <Route path="*" element={<Error404 />} ></Route>
           </Routes>
+
         </BrowserRouter>
-      </div>
-    
+      </div> 
   )
 }
 

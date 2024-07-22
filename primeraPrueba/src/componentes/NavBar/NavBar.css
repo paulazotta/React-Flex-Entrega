@@ -1,14 +1,7 @@
 .cartWidget{
     width: 15%;
 }
-.card2{
-    display: flex;
-    flex-wrap: wrap;
-}
-.card3{
-    display: flex;
-    flex-wrap: wrap;
-}
+
 /* .navBar{
 
     background-color: #F4DEFA;

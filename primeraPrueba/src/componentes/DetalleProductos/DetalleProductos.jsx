@@ -17,7 +17,6 @@ function DetalleProductos({id, img, nombre, caracteristicas}) {
             <div className="card-body">
                 <h5 className="card-title">{nombre}</h5>
                 <p className="card-text">{caracteristicas}</p>
-               
                 <img src={img} className="card-img-top imgCard" alt={nombre} />
                 
                 

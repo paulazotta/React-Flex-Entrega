@@ -11,7 +11,7 @@ const ItemDetail = ({productos}) => {
         const findProduct = productos.find(el => el.id ===  parseInt(id))
        setProductoSeleccionado(findProduct)
     },[])
-    
+  
   return (
     <div>
         {/* <p>
