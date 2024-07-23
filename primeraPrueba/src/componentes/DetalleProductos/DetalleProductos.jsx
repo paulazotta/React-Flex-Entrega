@@ -31,12 +31,3 @@ function DetalleProductos({id, img, nombre, caracteristicas}) {
 }
 
 export default DetalleProductos
-//style={{max-width: "540px"}}
-    //   <div key={id} className='card2'>
-    //       <h3 className='nombreProducto'>{nombre}</h3>
-    //       <p className='caracteristicas'>{caracteristicas}</p>
-          {/* <p className='caracteristicas'>{caracteristicas}</p> */}
-    //       <BotonAgregarCarrito/>
-          
-
-    //     </div>

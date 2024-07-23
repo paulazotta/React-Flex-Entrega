@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import './Filtro.css';
 
 function Filter({filterState, setFilterState}) {
 
@@ -12,11 +13,11 @@ function Filter({filterState, setFilterState}) {
   return (
     <div>
     <select onChange={handleFilter} id="filter" value={filterState}>
-        <option value="general">Tipo de cliente</option>
+        <option value="general">Todos</option>
         <option value="taller">Taller mecánico</option>
         <option value="particular">Particular</option>
     </select>
-    
+  
     </div>
   )
 }

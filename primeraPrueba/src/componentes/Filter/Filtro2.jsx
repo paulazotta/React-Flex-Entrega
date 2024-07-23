@@ -1,3 +1,4 @@
+// Este no va 
 import React, { useState } from 'react'
 
 function Filtro2() {
@@ -5,7 +6,7 @@ function Filtro2() {
         taller: false,
         particular: false,
     });
-    const [datosFiltrados, setDatosFiltrados] = useState([]);
+    const[filterProducts, setFilterProducts] = useState("todos");
 
    
     const handleOnCheckbox = (e) =>{
