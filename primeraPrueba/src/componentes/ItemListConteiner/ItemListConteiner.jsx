@@ -1,5 +1,6 @@
 import React from "react"
 import ItemList from "../ItemList/ItemList"
+import Loader from "../Loader/Loader";
 
 const ItemListConteiner = ({productos, filtro}) =>{
   const filtrarProductos = (productos, filtro) =>{
@@ -14,7 +15,7 @@ const ItemListConteiner = ({productos, filtro}) =>{
     <>
       {
         productos.length === 0?
-        <p>Cargando...</p>
+        <Loader/>
         :
         <ItemList productos={productosFiltrados} />
       }
