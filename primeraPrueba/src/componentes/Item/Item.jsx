@@ -7,11 +7,12 @@ import BotonAgregarCarrito from '../BotonAgregarCarrito/BotonAgregarCarrito'
 import './Item.css'
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { useAppContext } from '../Context/Context';
 
 
 
 function Item({img, nombre, valor, id, categoria}) {
-  
+  const {agregarAlCarrito} = useAppContext;
   return (
     <div className='cardContainer'>
         <div key={id} className="card"> 
@@ -24,7 +25,9 @@ function Item({img, nombre, valor, id, categoria}) {
           <Link to={`/detalle/${id}`}>
             <button type="button" className="btn btn-primary">Ver detalle</button>
           </Link>
-          <BotonAgregarCarrito/>
+          <button onClick={() => agregarAlCarrito(id)}>Agregar al carrito</button>
+          {/* <button type="button" className="btn btn-primary" onClick={() => agregarAlCarrito(id)}>Agregar al carrito</button> */}
+          {/* <BotonAgregarCarrito/> */}
         </div>
       </div>
     </div>

@@ -4,8 +4,10 @@ import './NavBar.css';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Inicio from '../Inicio/Inicio';
+import { useAppContext } from '../Context/Context';
 
 function NavBar() {
+  const {carrito} = useAppContext();
   return (
 
   <div>

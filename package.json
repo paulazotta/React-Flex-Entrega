@@ -12,6 +12,7 @@
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
     "bootstrapt": "^1.1.1",
+    "firebase": "^10.12.5",
     "react-router-dom": "^6.24.1"
   },
   "devDependencies": {
